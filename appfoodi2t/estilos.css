@@ -1,123 +1,105 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    position: relative;
     background-color: #436A36;
     overflow: hidden;
+    font-family: 'Inter', sans-serif;
 }
-.titulo{
-    font: 'Inter';
-    font-style: normal;
+
+.titulo {
     font-weight: 300;
-    position: fixed; /* Fija el texto en la pantalla */
-    top: 0; /* Posición en la parte superior */
-    right: 100px; /* Posición en la parte derecha */
-    margin: 10px; /* Espacio alrededor del texto, ajusta según sea necesario */
-    padding: 30px; /* Espacio interno alrededor del texto */
-    font-size: 90px; /* Tamaño de fuente opcional */
-    color: #DAC7AB; /* Color del texto */
+    position: fixed;
+    top: 10px;
+    right: 100px;
+    padding: 30px;
+    font-size: 90px;
+    color: #DAC7AB;
     text-align: center;
 }
 
+.subtitulo {
+    font-weight: 300;
+    position: absolute;
+    width: 500px;
+    right: 100px;
+    top: 100px;
+    font-size: 30px;
+    color: #DAC7AB;
+    text-align: center;
+}
 
-.subtitulo{
-/* Estas buscando encargar tu almuerzo? */
-font-family: 'Inter';
-font-style: semi-bold;
-position: absolute;
-font-weight: 300;
-width: 500px;
-right: 100px ;
-top: 100px;
-font-size: 30px;
-color: #DAC7AB;
-text-align: center;
+.p1 {
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    color: #DAC7AB;
+    text-align: center;
+}
+
+.iniciosesion, .registrarse {
+    position: fixed;
+    width: 30%;
+    height: 70px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .iniciosesion {
-    position: fixed; /* Fija el botón en la pantalla */
-    bottom: 250px; /* Distancia desde el borde inferior */
-    left: 150px; /* Distancia desde el borde izquierdo */
-    width: 30%; /* Ancho del botón */
-    height: 70px; /* Altura del botón */
-    background: #C28A35; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    font-size: 16px; /* Tamaño de fuente */
-    border: none; /* Sin borde */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del botón */
-    display: flex; /* Usa Flexbox para centrar el contenido */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background 0.3s, box-shadow 0.3s; /* Transiciones para efectos */
+    bottom: 250px;
+    left: 150px;
+    background: #C28A35;
+    color: white;
 }
 
 .iniciosesion:hover {
-    background: #A67C42; /* Color de fondo en hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra en hover */
+    background: #A67C42;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .iniciosesion:active {
-    background: #8B5E34; /* Color de fondo cuando se presiona */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra cuando se presiona */
+    background: #8B5E34;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.registrarse{
-    position: fixed; /* Fija el botón en la pantalla */
-    bottom: 150px; /* Distancia desde el borde inferior */
-    left: 150px; /* Distancia desde el borde izquierdo */
-    width: 30%; /* Ancho del botón */
-    height: 70px; /* Altura del botón */
-    background: #DAC7AB; /* Color de fondo del botón */
-    color: #544B3D; /* Color del texto */
-    font-size: 16px; /* Tamaño de fuente */
-    border: none; /* Sin borde */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del botón */
-    display: flex; /* Usa Flexbox para centrar el contenido */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background 0.3s, box-shadow 0.3s; /* Transiciones para efectos */
+.registrarse {
+    bottom: 150px;
+    left: 150px;
+    background: #DAC7AB;
+    color: #544B3D;
 }
 
 .registrarse:hover {
-    background: #ceab77; /* Color de fondo en hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra en hover */
+    background: #ceab77;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .registrarse:active {
-    background: #926e3b; /* Color de fondo cuando se presiona */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra cuando se presiona */
+    background: #926e3b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .workoffice {
     position: fixed;
-right: 0%;
-bottom: 0%;
-width: 700px;
-height: auto;
-filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
-}
-
-.p1{
-position: fixed;
-font-size: 30px;
-font-family: 'Inter';
-font-style: semi-bold;
-position: absolute;
-left: 200px ;
-top: 300px;
-color: #DAC7AB;
-text-align: center;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
 }
 
 .forma {
     position: absolute;
     width: 300px;
-    height: 400px; 
-    top: -20px; 
-    left:-10px; 
+    height: 400px;
+    top: -20px;
+    left: -10px;
 }
-
